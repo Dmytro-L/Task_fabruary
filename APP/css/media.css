@@ -1,0 +1,89 @@
+@media (max-width: 450px) {
+  body {
+    height: 100%; }
+    body .left-nav {
+      margin-top: -200%;
+      transition: all .6s; }
+    body .left-nav.menu {
+      margin-top: 0;
+      transition: all .6s; }
+    body .left-nav {
+      position: absolute;
+      top: 87px;
+      width: 100%;
+      max-height: calc(100% - 87px);
+      background-color: #ccdaff;
+      z-index: 5; }
+      body .left-nav .logo {
+        display: none; }
+    body .wrapper {
+      padding-left: 0; }
+      body .wrapper .header-mobile {
+        align-items: center;
+        background-color: white;
+        min-width: 100%;
+        display: flex;
+        justify-content: space-evenly; }
+        body .wrapper .header-mobile__logo a {
+          margin-top: 0; }
+        body .wrapper .header-mobile .header-block__button {
+          border: 1px solid rgba(97, 97, 97, 0.658); }
+        body .wrapper .header-mobile__burger {
+          width: 40px;
+          height: 30px;
+          position: relative; }
+        body .wrapper .header-mobile__burger::after, body .wrapper .header-mobile__burger::before {
+          content: '';
+          position: absolute;
+          width: 40px;
+          height: 1px;
+          background-color: rgba(82, 81, 81, 0.651); }
+        body .wrapper .header-mobile__burger::after {
+          top: 7px;
+          transition: all .5s; }
+        body .wrapper .header-mobile__burger::before {
+          bottom: 7px;
+          transition: all .5s; }
+        body .wrapper .header-mobile__burger.active::before {
+          transform: rotate(135deg);
+          bottom: 15px;
+          transition: all .5s; }
+        body .wrapper .header-mobile__burger.active::after {
+          transform: rotate(-315deg);
+          top: 15px;
+          transition: all .5s; }
+      body .wrapper .header-block .display {
+        display: none; }
+      body .wrapper .form__block {
+        display: block; }
+        body .wrapper .form__block .inputs {
+          margin-left: 0; }
+        body .wrapper .form__block .set .text {
+          font-size: 11px; }
+      body .wrapper .form__img {
+        margin: 0 auto; }
+      body .wrapper .form__input-file {
+        width: 100%; }
+      body .wrapper .form__pass-link {
+        width: 100%; }
+      body .wrapper .form__user {
+        width: 100%; }
+      body .wrapper .form__mail {
+        width: 100%; }
+      body .wrapper .social__google {
+        width: 100%; }
+      body .wrapper .social__text {
+        display: none; }
+      body .wrapper .social__connected {
+        width: 110px; }
+      body .wrapper .social__connecting {
+        width: 110px; }
+      body .wrapper .social__facebook {
+        width: 100%; }
+      body .wrapper .disable {
+        display: block; }
+        body .wrapper .disable__text {
+          line-height: 26px;
+          margin-bottom: 25px; }
+        body .wrapper .disable__button {
+          width: 100%; } }

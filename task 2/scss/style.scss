@@ -1,0 +1,73 @@
+
+
+@import "../css/0.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+$F-FRoboto: Roboto;
+
+
+html,
+body{
+    background-color: #E5E5E5;
+    box-sizing: border-box;
+    display: block;
+}
+
+
+
+
+
+.text{
+    height: 450px;
+}
+.container {  
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 462px;
+    height: 198px;
+    -webkit-perspective: 1200;
+    perspective: 1200;
+    -moz-transform: perspective(1200px);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d; 
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+
+
+.flipper {
+    width: 462px;
+    height: 198px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s linear;  
+    
+}
+.back {
+    width: 462px;
+    height: 198px;
+    position: absolute;
+    top: 0;
+    transition: .7s linear;
+    
+}
+.front{
+    width: 462px;
+    height: 198px;
+    position: absolute;
+    top: 0;
+    transition: .7s linear;
+    
+    
+}
+
+
+.active{
+    transform: rotateX(180deg);
+    
+    
+}
+
+
