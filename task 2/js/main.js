@@ -15,7 +15,10 @@
 */
 
     
-window.addEventListener('scroll', () => {
+
+
+
+function moveCard() {
     var intViewportHeight = window.innerHeight / 2;
     var scrollDistance = window.scrollY;
     var cont = document.querySelector('.container');
@@ -29,9 +32,13 @@ window.addEventListener('scroll', () => {
 
         
         if (scrollDistance - topDistance < 0) {
+ 
             flip.classList.add('active');
         }
         else{
             flip.classList.remove('active');
         }
-});
+
+}
+
+window.addEventListener('scroll', moveCard);
